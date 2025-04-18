@@ -40,6 +40,14 @@ const HomeScreen = ({ navigation }) => {
                 }}
             />
 
+            <Button
+                title="Go to Image Page"
+                onPress={() => {
+                    console.log('Go to Image Screen Button pressed');
+                    navigation.navigate('Image');
+                }}
+            />
+
             {/* The better way to handle things is this component */}
             <TouchableOpacity
                 onPress={() => {
@@ -50,7 +58,7 @@ const HomeScreen = ({ navigation }) => {
                 }}
             >
                 {/* Clicking on this will cause it to fade out for a moment, showing interaction */}
-                <Text>Go to List Page</Text>
+                <Text>Touchable Opacity: Go to List Page</Text>
                 <Text>Everything inside is one button</Text>
                 <Text>Useful for like photos, maybe</Text>
             </TouchableOpacity>
